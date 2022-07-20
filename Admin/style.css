@@ -1,0 +1,21 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.h-font{
+    font-family: 'Merienda', cursive;
+
+}
+input[type="number"]{
+    -moz-appearance:textfield;
+
+}
+.custom-bg{
+  background-color: rgb(20, 202, 202);
+}
+.custom-bg:hover{
+    background-color: aqua;
+
+}
+.box{
+    border-top-color: aqua !important;
+}
