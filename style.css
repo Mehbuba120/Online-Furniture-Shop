@@ -10,12 +10,38 @@ input[type="number"]{
 
 }
 .custom-bg{
-  background-color: rgb(20, 202, 202);
+  background-color: rgb(255, 255, 255);
 }
 .custom-bg:hover{
-    background-color: aqua;
+    background-color: rgb(232, 241, 241);
+
+}
+.footer-bg{
+    background-color: rgb(18, 19, 19);
+
+}
+.footer1-bg{
+    background-color: rgb(227, 238, 238);
 
 }
 .box{
     border-top-color: aqua !important;
 }
+.btn-bg{
+    border-top-color: rgb(77, 80, 79) !important;
+
+}
+
+ul#menu li {
+    display:inline;
+  }
+
+
+  .input[type="checkbox"] {
+    margin-left: -30px;
+  }
+
+
+
+
+  

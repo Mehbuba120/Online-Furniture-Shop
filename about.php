@@ -43,7 +43,7 @@
         </p>
       </div>
       <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-1 order-1">
-        <img src="./image/chair2.jpg" alt="Owner" class="w-100">
+        <img src="./image/Light.jpg" alt="Owner" class="w-100">
       </div>
     </div>
   </div>

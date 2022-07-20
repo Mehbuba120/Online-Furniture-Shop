@@ -58,17 +58,17 @@ if (isset($_POST['ad_login']))
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-dark px-lg-3 py-lg-2 shadow-sm sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-lg-3 py-lg-2 shadow-sm sticky-top">
         <div class="container-fluid">
-                <a class="navbar-brand me-5 fw-bold fs-3 h-font text-white" href="admin panel.php">Furniture BD-Admin Panel</a>
+                <a class="navbar-brand me-5  fs-3 h-font text-dark" href="admin panel.php">DETOUR <h6>Admin Panel</h6> </a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                      <li class="nav-item">
-                        <a class="nav-link active me-2 text-white" aria-current="page" href="cart_manage.php">Cart_Manage</a>
+                        <a class="nav-link active me-2 text-dark" aria-current="page" href="cart_manage.php">Cart_Manage</a>
                      </li>
                     
                       <li class="nav-item">
-                           <a class="nav-link text-white" href="admin panel.php">insert_product</a>
+                           <a class="nav-link text-dark" href="admin panel.php">Manage_product</a>
                       </li>
                 
                  
@@ -81,7 +81,7 @@ if (isset($_POST['ad_login']))
                                {
                                  echo "
                                   <a href='logout.php'>
-                                  <button  type='button' class='btn btn-light shadow-none me-lg-3 me-2' >LOGOUT</button>
+                                  <button  type='button' class='btn btn-outline-dark shadow-none me-lg-3 me-2' >LOGOUT</button>
                                    </a>
 
                                   ";

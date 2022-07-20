@@ -99,11 +99,11 @@ require ('header.php');
    <div class="col-lg-5 p-10 ">
    </div>
    <div class="col-lg-5 p-4">
-         <h1 class="h-font fw-bold fs-3 mb-2">Furniture BD</h1>
+         <h1 class="h-font fw-bold fs-3 mb-2"></h1>
            
     </div>
     </div>
  </div>
-<h6 class="text-center bg-dark text-white p-3 m-0">Copyright © 2022 Furniture BD. All right reserved</h6>   
+<h6 class="text-center bg-dark text-white p-3 m-0">Copyright © 2022 Detour All right reserved</h6>   
 </body>
 </html>
