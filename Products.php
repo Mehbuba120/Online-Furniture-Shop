@@ -28,22 +28,23 @@ require('common.php');
 
 
 
-  <div class="container bg-white text-center">
+  <div class="container bg-white text-center mt-2">
       <div class="row">
 
         <div class="col-lg-12 m-3">
           <div class="form-group">
             <form action="" method="GET">
               
-                <h4 class="mb-4"><button name='search' class='btn btn-outline-dark btn-sm'><h6>Search Category</h6> </button> </h4>
+                <h4 class="mb-4 mt-3"><button name='search' class='btn btn-outline-dark btn-sm'><h6>Search</h6> </button> </h4>
                 <?php
                 $query = "SELECT DISTINCT(catname) FROM products";
                 $result = mysqli_query($con, $query);
                 while ($result_fetch = mysqli_fetch_assoc($result)) {
 
                   echo "
-                          <label class='checkbox-inline mb-5' >
-                          <input type='checkbox'  name='catname' margin-right:'5px;' value='$result_fetch[catname]' >
+                          
+                          <label class='checkbox-inline mb-4 mx-5' >
+                          <input type='checkbox'  name='catname' style='margin: right 4px;' value='$result_fetch[catname]' >
                           $result_fetch[catname]</label> 
                             
                           ";
@@ -80,13 +81,13 @@ require('common.php');
                                   </div>
 
                                   <div class='col-md-4 px-lg-3'>
-                                    <h4 class='quantity mb-1 '> $result_fetch[name]</h4>
-                                    <h5 class='quantity mb-5 '>Quantity:  $result_fetch[quantity]</h5>
+                                    <h5 class='quantity mb-1 '>Title: $result_fetch[name]</h5>
+                                    <h5 class='quantity mb-4 '>Quantity:  $result_fetch[quantity]</h5>
                                     <h6 class='quantity mb-1'> $result_fetch[description] </h6>
                                   </div>
 
                                   <div class='col-md-2 text-center'>
-                                  <h5 class='card-title mb-2 '>$result_fetch[price] BDT</h5>
+                                  <h5 class='card-title mb-2 'style='color:green;''>$result_fetch[price] BDT</h5>
                                   <button type='submit'  name='add'  class='btn btn-sm w-100 btn-outline-dark'>Add To Cart</button>  
                                   </div>
                               </div>
@@ -115,13 +116,13 @@ require('common.php');
                       </div>
 
                       <div class='col-md-4 px-lg-3'>
-                        <h4 class='quantity mb-1 '> $result_fetch[name]</h4>
-                        <h5 class='quantity mb-5 '>Quantity:  $result_fetch[quantity]</h5>
+                        <h5 class='quantity mb-1 '>Title: $result_fetch[name]</h5>
+                        <h5 class='quantity mb-4 '>Quantity:  $result_fetch[quantity]</h5>
                         <h6 class='quantity mb-1'> $result_fetch[description] </h6>
                       </div>
 
                       <div class='col-md-2 text-center'>
-                      <h5 class='card-title mb-2 '>$result_fetch[price] BDT</h5>
+                      <h5 class='card-title mb-2' style='color:green;'>$result_fetch[price] BDT</h5>
                       <button type='submit'  name='add'  class='btn btn-sm w-100 btn-outline-dark'>Add To Cart</button>  
                       </div>
                   </div>

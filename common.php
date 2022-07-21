@@ -11,7 +11,7 @@ session_start();
 <!-- Navigation bar. Common for all pages -->
 <nav class="navbar navbar-expand-lg navbar-light custom-bg px-lg-3 py-lg-2 shadow-sm sticky-top">
         <div class="container-fluid">
-                <a class="navbar-brand me-5 fw-bold fs-3 h-font" href="index.php">DETOUR</a>
+                <a class="navbar-brand me-5 fw-bold fs-3 h-font" href="index.php" style="color:red;">DETOUR</a>
                    <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                    </button>
@@ -64,83 +64,4 @@ session_start();
 </nav>
 
 
-    <!-- Modal. Login and Register button work-->
-<!-- <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-        <form action="common.php" method="POST">
-            <div class="modal-header">
-                <h5 class="modal-title d-flex align-items-center" >User LogIn</h5>
-                <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-             <div class="modal-body">
-                 <div class="mb-3">
-                     <label  class="form-label">Email address</label>
-                     <input name="email" type="email" value = "<?php if(isset($_COOKIE['email'])) echo $_COOKIE['email']; ?>" class="form-control shadow-none" >
-                     
-                 </div>
-                 <div class="mb-3">
-                     <label  class="form-label">Password</label>
-                     <input name="password" type="password" value = "<?php if(isset($_COOKIE['password'])) echo $_COOKIE['password'] ;?>" class="form-control shadow-none" >
-                     
-                 </div>
-                 <div class="d-flex align-items-center justify-content-between mb-2">
-                    <button name="login" type="submit" class="btn btn-outline-dark  shadow-none">LOGIN</button>
-
-                 </div>
-             </div>
-             
-
-        </form>
-      
-    </div>
-  </div>
-</div>
-
-
-<div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-        <form id="register-form" method="POST" action="common.php">
-            <div class="modal-header">
-                <h5 class="modal-title d-flex align-items-center" >User Registration</h5>
-                <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-             <div class="modal-body">
-              <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap lh-base">
-
-
-              </span>
-                 <div class="mb-3">
-                     <label  class="form-label">Full Name</label>
-                     <input name="fname" type="fname" class="form-control shadow-none" required>
-                     
-                 </div>
-                 <div class="mb-3">
-                     <label  class="form-label">User Name</label>
-                     <input name="username" type="username" class="form-control shadow-none" required>
-                     
-                 </div>
-                 <div class="mb-3">
-                     <label  class="form-label">Email address</label>
-                     <input name="email" type="email" class="form-control shadow-none" required>
-                     
-                 </div>
-                 <div class="mb-3">
-                     <label  class="form-label">Password</label>
-                     <input name="password" type="password" class="form-control shadow-none" required>
-                     
-                 </div>
-                 <div class="d-flex align-items-center justify-content-between mb-2">
-                    <button name="register" type="submit" class="btn btn-outline-dark shadow-none">REGISTER</button>
-
-                 </div>
-             </div>
-             
-
-        </form>
-      
-    </div>
-  </div>
-</div> -->
-
+ 

@@ -32,7 +32,7 @@ require('connection.php');
   <div class="card mb-3" style="max-width: 100%;">
     <div class="row g-0 p-3 align-items-center">
       <div class="col-md-5">
-        <h3 class="mt-5 pt-4 text-center  ">Let your living space live up to your expectations.</h3>
+        <h3 class="mt-5 pt-4 text-center " style="color:red;">Let your living space live up to your expectations.</h3>
       </div>
      
 
@@ -44,30 +44,6 @@ require('connection.php');
     </div>
   </div>
 
-
-  <!-- Slider pictures
-  <div class="container-fluid px-lg-4 mt4 ">
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="./image/slider41.jpg" class="w-100 d-block" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./image/slider114.jpg" class="w-100 d-block" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./image/slider111.jpg" class="w-100 d-block" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./image/dinning111.jpg" class="w-100 d-block" />
-        </div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
-   -->
 
   <!-- Our products-->
   <h2 class="mt-5 pt-4 text-center fw-bold h-font">OUR PRODUCTS</h2>
@@ -205,20 +181,7 @@ require('connection.php');
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      effect: "fade",
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
+  
 </body>
 
 </html>

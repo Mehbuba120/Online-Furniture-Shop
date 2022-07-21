@@ -25,8 +25,9 @@ require ('header.php');
       <div class="row">
         <div class="col-lg-12">
         <table class="table text-center ">
-          <thead class="table-dark table-striped text-center">
+          <thead class=" table-striped table-dark text-center">
             <tr>
+              <th scope="col">Status</th>
               <th scope="col">Order_Id</th>
               <th scope="col">Customer_name</th>
               <th scope="col">Phone number</th>
@@ -43,13 +44,19 @@ require ('header.php');
             {
               echo "
               <tr class='bg-light'>
+              <td style='vertical-align:center;'>
+              <form action='cart_delete.php' method='POST'>
+              <button name='done' class='btn btn-outline-dark btn-sm'>Done </button>
+              <input type='hidden' name='oid' value='$result_fetch[order_id]'>
+              </form>
+              </td>
               <td>$result_fetch[order_id]</td>
               <td>$result_fetch[fname]</td>
               <td>$result_fetch[phn_num]</td>
               <td>$result_fetch[address]</td>
               <td>$result_fetch[pay_mode]</td>
               <td>
-                <table class='table text-center table-dark table-striped'>
+                <table class='table text-center table-striped' style='background-color:dark grey;' >
                   <thead>
                     <tr>
                       <th scope='col'>Product_name</th>

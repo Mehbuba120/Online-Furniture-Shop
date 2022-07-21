@@ -58,9 +58,9 @@ if (isset($_POST['ad_login']))
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light px-lg-3 py-lg-2 shadow-sm sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light  custom-bg  px-lg-3 py-lg-2 shadow-sm sticky-top">
         <div class="container-fluid">
-                <a class="navbar-brand me-5  fs-3 h-font text-dark" href="admin panel.php">DETOUR <h6>Admin Panel</h6> </a>
+                <a class="navbar-brand me-5  fs-3 h-font text-dark" href="admin panel.php"  style="color:red;" >DETOUR <h6>Admin Panel</h6> </a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                      <li class="nav-item">
