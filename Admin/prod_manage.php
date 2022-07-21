@@ -5,6 +5,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
   if(isset($_POST['add']))
   {
     $name= $_POST['name'];
+    $catname= $_POST['catname'];
     $price=$_POST['price'];
     $quantity= $_POST['quantity'];
     $description=$_POST['description'];
@@ -28,11 +29,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     }
     else
     {
-       
-        
-
-        $query="INSERT INTO products (`name`, `price`, `quantity`, `image`,`description`) 
-        VALUES ('$name','$price','$quantity','$img_des','$description')";
+    
+        $query="INSERT INTO products (`name`, `price`, `quantity`, `image`,`description`,`catname`) 
+        VALUES ('$name','$price','$quantity','$img_des','$description','$catname')";
         $query_run=mysqli_query($con,$query);
         if($query_run)
         {
