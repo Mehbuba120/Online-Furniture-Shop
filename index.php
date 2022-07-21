@@ -3,7 +3,7 @@ require('common.php');
 ?>
 <?php
 require('connection.php');
-
+//session_destroy();
 ?>
 
 
@@ -44,6 +44,30 @@ require('connection.php');
     </div>
   </div>
 
+
+  <!-- Slider pictures
+  <div class="container-fluid px-lg-4 mt4 ">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./image/slider41.jpg" class="w-100 d-block" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./image/slider114.jpg" class="w-100 d-block" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./image/slider111.jpg" class="w-100 d-block" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./image/dinning111.jpg" class="w-100 d-block" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+   -->
 
   <!-- Our products-->
   <h2 class="mt-5 pt-4 text-center fw-bold h-font">OUR PRODUCTS</h2>
@@ -117,7 +141,7 @@ require('connection.php');
       </div>
 
       <div class="col-lg-12 text-center mt-5">
-        <a href="Products.php" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">More Products >></a>
+        <a href="Products.php" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">View Products >></a>
       </div>
     </div>
 

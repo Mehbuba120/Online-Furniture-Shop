@@ -43,7 +43,7 @@ require('common.php');
 
                   echo "
                           <label class='checkbox-inline mb-5' >
-                          <input type='checkbox'  name='catname' value='$result_fetch[catname]' >
+                          <input type='checkbox'  name='catname' margin-right:'5px;' value='$result_fetch[catname]' >
                           $result_fetch[catname]</label> 
                             
                           ";
@@ -59,54 +59,6 @@ require('common.php');
   </div>
   </div>
 
-
-
-
-
-
-
-<!--
-
-  <div class="container bg-white">
-    <div class="row">
-
-      <div class='card mb-6 border-0 shadow '>
-        <div class='row g-0 p-3 align-items-center'>
-          <div class='col-md-3 px-lg-3'>
-            <form action="" method="GET">
-              <div class="list-group">
-                <h4>Categories <button name='search' class='btn btn-outline-dark btn-sm'>Search </button> </h4>
-               <?php
-                $query = "SELECT DISTINCT(catname) FROM products";
-                $result = mysqli_query($con, $query);
-                while ($result_fetch = mysqli_fetch_assoc($result)) {
-
-                  echo "
-                          <div class='list-group-item checkbox' display='inline-block' >
-                          <input type='checkbox'  name='catname' value='$result_fetch[catname]'>
-                          $result_fetch[catname]
-                          </div>
-                          
-                          ";
-                }
-
-                ?> 
-              </div>
-            </form>
-
-          </div>
-
-
-
-        </div>
-
-
-
-      </div>
-    </div>
-  </div>
-
- -->
 
   <!-- Show products from admin panel -->
   <div class="container mt-5">
