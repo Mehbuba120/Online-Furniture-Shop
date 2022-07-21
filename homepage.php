@@ -49,8 +49,6 @@ if (isset($_GET['login'])) {
     }
 }
 
-//registration
-
 ?>
 
 
@@ -78,9 +76,9 @@ if (isset($_GET['login'])) {
 
 
 <!-- Navigation bar. Common for all pages -->
-<nav class="navbar navbar-expand-lg navbar-light custom-bg px-lg-3 py-lg-2 shadow-sm sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-lg-3 py-lg-2 shadow-sm sticky-top">
     <div class="container-fluid">
-       <h3 class="navbar-brand me-5 fw-bold fs-3 h-font text-center">DETOUR</h3>
+       <h3 class="navbar-brand me-5 fw-bold fs-3 h-font text-center"style='color:red;'>DETOUR</h3>
         <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

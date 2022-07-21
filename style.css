@@ -46,4 +46,16 @@ ul#menu li {
   }
 
 
-  
+ 
+.serviceBox1{
+    float:left;
+    width:20%;
+    height: 250px;
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 10px #bdbdbd;
+    -webkit-box-shadow: 0 0 10px #bdbdbd;
+    box-shadow: 0 0 10px #bdbdbd;
+}
