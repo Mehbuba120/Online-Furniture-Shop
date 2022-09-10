@@ -20,29 +20,21 @@ require('connection.php');
   require('links.php');
   ?>
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-
-  <style>
-
-
-  </style>
-
 </head>
+
 
 <body class="bg-light">
   <div class="card mb-3" style="max-width: 100%;">
     <div class="row g-0 p-3 align-items-center">
       <div class="col-md-5">
-        <h3 class="mt-5 pt-4 text-center " style="color:red;">Let your living space live up to your expectations.</h3>
+        <h3 class="mt-5 pt-4 text-center " >Let your living space live up to your expectations.</h3>
       </div>
-     
-
-
       <div class="col-md-7">
         <img src="./image/Best-Furniture-Hatil.jpg" class="img-fluid rounded-start" alt="...">
       </div>
 
     </div>
-  </div>
+</div>
 
 
   <!-- Our products-->
@@ -181,7 +173,12 @@ require('connection.php');
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-  
+  <script>
+     $("h3").css("color","red");
+     $("h2").css("font-family","Merienda, cursive");
+     $("h3").css("font-family","Merienda, cursive");
+  </script>
+ 
 </body>
 
 </html>

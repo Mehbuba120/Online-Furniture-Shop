@@ -1,5 +1,6 @@
 <?php 
 require("connection.php");
+
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +28,7 @@ require("connection.php");
 <body class="bg-light">
     <!-- login form -->
     <div class="admin-login text-center rounded bg-white shadow overflow-hidden">
-        <form action="admin panel.php" method="POST">
+        <form action="header.php" method="POST">
         
         <div class="modal-header ">
                 <h4 class="modal-title d-flex align-items-center " >ADMIN LOGIN</h4>

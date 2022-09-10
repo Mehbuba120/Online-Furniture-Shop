@@ -1,4 +1,3 @@
-
 <?php
 require('connection.php');
 session_start();
@@ -17,7 +16,7 @@ if (isset($_GET['login'])) {
             if (password_verify($_GET['password'], $result_fetch['password'])) {
                 $_SESSION['logged_in'] = true;
                 $_SESSION['username'] = $result_fetch['fullName'];
-                
+
 
                 setcookie("email", $result_fetch['email'], time() + 86400);
                 setcookie("password", $result_fetch['password'], time() + 86400);
@@ -51,8 +50,6 @@ if (isset($_GET['login'])) {
 
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,25 +64,20 @@ if (isset($_GET['login'])) {
     ?>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
-    <style>
-
-
-    </style>
-
 </head>
 
 
 <!-- Navigation bar. Common for all pages -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light px-lg-3 py-lg-2 shadow-sm sticky-top">
     <div class="container-fluid">
-       <h3 class="navbar-brand me-5 fw-bold fs-3 h-font text-center"style='color:red;'>DETOUR</h3>
+        <h1 id="f" class="navbar-brand me-5 fw-bold fs-3 h-font text-center" style='color:red;'> DeTOUR</h1>
         <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active me-2" aria-current="page" href="#"></a>
+            
                 </li>
                 <li class="nav-item">
                     <a class="nav-link me-2" href="#"></a>
@@ -103,7 +95,7 @@ if (isset($_GET['login'])) {
 
             </ul>
             <div class="d-flex">
-        
+
 
                 <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2" data-bs-toggle="modal" data-bs-target="#loginModal">
                     Login
@@ -155,7 +147,7 @@ if (isset($_GET['login'])) {
 <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form  method="POST" action="register.php">
+            <form method="POST" action="register.php">
                 <div class="modal-header">
                     <h5 class="modal-title d-flex align-items-center">User Registration</h5>
                     <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -199,11 +191,11 @@ if (isset($_GET['login'])) {
 </div>
 
 
-
+<!--Swiper -->
 <div class="container-fluid px-lg-4 mt4 ">
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-            
+
             <div class="swiper-slide">
                 <img src="./image/slider114.jpg" class="w-100 d-block" />
             </div>
@@ -220,8 +212,22 @@ if (isset($_GET['login'])) {
     </div>
 </div>
 
+<div class="container availability-form">
+    <div class="row">
+      <div class="col-lg-12 bg-white shadow p-4 rounded">
+        <h5 id="show" class="mb-4">Welcome to DETOUR</h5>
+        <p id="hide">DETOUR is a fast-growing Global Furniture Brand with customers and connoisseurs around the globe.
+     The brand presents an impeccable range of wooden furniture products manufactured from 
+    the best-sourced materials and with a deft touch of seasoned artisanship.</p>
+      
+      </div>
+    </div>
+  </div>
 
-<!-- Our products-->
+
+
+
+  <!-- Our products-->
 <h2 class="mt-5 pt-4 text-center fw-bold h-font">OUR PRODUCTS</h2>
 <div class="container">
     <div class="row">
@@ -292,7 +298,7 @@ if (isset($_GET['login'])) {
 
         </div>
 
-        
+
     </div>
 
 </div>
@@ -354,7 +360,13 @@ require('footer.php');
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+<script>
+        $("h1").css("color","black");
+        $("h2").css("color","grey");
+       
+      </script>
 <script>
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
@@ -368,6 +380,17 @@ require('footer.php');
             clickable: true,
         },
     });
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
 </script>
 </body>
 

@@ -28,14 +28,14 @@ require('common.php');
 
 
 
-  <div class="container bg-white text-center mt-2">
+  <div class="container bg-light text-center mt-2">
       <div class="row">
 
         <div class="col-lg-12 m-3">
           <div class="form-group">
             <form action="" method="GET">
               
-                <h4 class="mb-4 mt-3"><button name='search' class='btn btn-outline-dark btn-sm'><h6>Search</h6> </button> </h4>
+                <h4 class="mb-4 mt-3"><button name='search' class='btn btn-outline-dark btn-sm'  style='float:right; margin-right:2px;'><h6>Search</h6> </button> </h4>
                 <?php
                 $query = "SELECT DISTINCT(catname) FROM products";
                 $result = mysqli_query($con, $query);
@@ -43,7 +43,7 @@ require('common.php');
 
                   echo "
                           
-                          <label class='checkbox-inline mb-4 mx-5' >
+                          <label class='checkbox-inline mb-4 mx-5 mt-3' >
                           <input type='checkbox'  name='catname' style='margin: right 4px;' value='$result_fetch[catname]' >
                           $result_fetch[catname]</label> 
                             
@@ -101,7 +101,8 @@ require('common.php');
                             
                         ";
         }
-      } else {
+      }
+       else {
         // show all products
         $query = "SELECT * FROM products";
         $result = mysqli_query($con, $query);
@@ -137,7 +138,7 @@ require('common.php');
             ";
         }
       }
-      ?>
+    ?>
 
     </div>
   </div>

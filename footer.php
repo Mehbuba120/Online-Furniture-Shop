@@ -2,7 +2,7 @@
 <div class="containe-fluid footer1-bg mt-5">
     <div class="row">
         <div class="col-lg-5 p-4 ">
-            <h3 class="h-font fw-bold fs-3 mb-2 m-2">Detour</h3>
+            <h2 class="h-font fw-bold fs-3 mb-2 m-2">Detour</h2>
             <p class="m-2">
             DETOUR is considered to be the ‘game-changer’ in
             Bangladesh’s furniture industry. Carefully-chosen
